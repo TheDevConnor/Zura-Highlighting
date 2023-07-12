@@ -1,10 +1,10 @@
 {
   "name": "zu",
   "displayName": "Zura Lang",
-  "author": "TheDevConnor",
+  "publisher": "TheDevConnor",
   "description": "A Syntax HighLighter for Zura Lang",
   "icon": "img/zura.png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.80.0"
   },

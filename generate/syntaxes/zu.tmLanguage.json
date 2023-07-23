@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Zura",
-	"patterns": [
+"patterns": [
 		{ "include": "#comments" },
 		{ "include": "#operations" },
 		{ "include": "#strings" },
@@ -11,14 +11,6 @@
 		{ "include": "#ctr-statements" },
 		{ "include": "#reserved-words2" }
 	],
-		
-	"colors": {
-		"math": "#FF00FF",
-		"keyword.operator.assignment.az": "#FF0000",
-		"storage.type.declaration-ident.az": "#0072C6",
-		"storage.type.builtin-types.az": "#8c1aff"
-	},
-
 	"repository": {
 		"comments": {
 			"patterns": [
@@ -92,10 +84,6 @@
 					"match": "\\b(class|func|info)\\b"
 				},
 				{
-					"name": "keyword.operator.az",
-					"match": "\\b(include)\\b"
-				},
-				{
 					"name": "storage.type.builtin-types.az",
 					"match": "\\b(sin|cos|tan|asin|acos|atan|pi)\\b",
 					"captures": {
@@ -103,24 +91,37 @@
 							"name": "support.function.math.az"
 						}
 					}
+				},
+				{
+					"name": "variable.other.declaration-az",
+					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*:?=)",
+					"captures": {
+						"1": {
+							"name": "variable.other.declaration-az.name"
+						}
+					}
+				},
+				{
+					"name": "keyword.operator.az",
+					"match": "\\b(include)\\b"
 				}
 			]
 		},
 		"reserved-words2": {
 			"patterns": [
 				{
-				"name": "storage.type.declaration-ident.az",
-				"match": "\\b(have|func|case|class|extends)\\b",
-				"foreground": "#FF00FF"
+				  "name": "storage.type.declaration-ident.az",
+				  "match": "\\b(have|func|case|class|extends)\\b",
+				  "foreground": "#FF00FF"
 				},
 				{
-				"name": "variable.other.declaration-az",
-				"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*:?=)",
-				"captures": {
+				  "name": "variable.other.declaration-az",
+				  "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*:?=)",
+				  "captures": {
 					"1": {
-					"name": "variable.other.declaration-az.name"
+					  "name": "variable.other.declaration-az.name"
 					}
-				}
+				  }
 				}
 			]
 		},
@@ -132,6 +133,13 @@
 				}
 			]
 		}
+	},
+	
+	"colors": {
+		"math": "#FF00FF",
+		"keyword.operator.assignment.az": "#FF0000",
+		"storage.type.declaration-ident.az": "#0072C6",
+		"storage.type.builtin-types.az": "#8c1aff"
 	},
 	"scopeName": "source.zu"
 }

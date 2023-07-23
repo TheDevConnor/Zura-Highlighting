@@ -24,7 +24,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.az",
-					"match": "\\b(and|or|not|!|init|this|include\\b"
+					"match": "\\b(and|or|not|!|init|this)\\b"
 				},
 				{
 					"name": "keyword.operator.assignment.az",
@@ -68,7 +68,7 @@
 		"ctr-statements": {
 			"patterns": [
 				{
-					"match": "\\b(if|else|while|for|switch)\\b",
+					"match": "\\b(if|else|while|for|switch|include)\\b",
 					"name": "keyword.operator.az"
 				}
 			]
@@ -98,7 +98,7 @@
 			"patterns": [
 				{
 				  "name": "storage.type.declaration-ident.az",
-				  "match": "\\b(have|func|case|class|extends\\b",
+				  "match": "\\b(have|func|case|class|extends)\\b",
 				  "foreground": "#FF00FF"
 				},
 				{

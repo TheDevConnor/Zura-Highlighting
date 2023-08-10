@@ -68,7 +68,7 @@
 		"ctr-statements": {
 			"patterns": [
 				{
-					"match": "\\b(if|else|while|for|switch|include)\\b",
+					"match": "\\b(if|else|while|for|match|include)\\b",
 					"name": "keyword.operator.az"
 				}
 			]
@@ -81,7 +81,7 @@
 				},
 				{
 					"name": "storage.type.declaration-ident.az",
-					"match": "\\b(class|func|info)\\b"
+					"match": "\\b(class|func|info|exit|input)\\b"
 				},
 				{
 					"name": "storage.type.builtin-types.az",

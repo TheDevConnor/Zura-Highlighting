@@ -69,6 +69,7 @@
 			"patterns": [
 				{
 					"match": "\\b(if|else|while|for|match|include)\\b",
+					"match": "\\b(if|else|while|for|match|include)\\b",
 					"name": "keyword.operator.az"
 				}
 			]

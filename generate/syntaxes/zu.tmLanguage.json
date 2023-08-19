@@ -69,7 +69,6 @@
 			"patterns": [
 				{
 					"match": "\\b(if|else|while|for|match|include)\\b",
-					"match": "\\b(if|else|while|for|match|include)\\b",
 					"name": "keyword.operator.az"
 				}
 			]
@@ -82,7 +81,7 @@
 				},
 				{
 					"name": "storage.type.declaration-ident.az",
-					"match": "\\b(class|fn|info)\\b"
+					"match": "\\b(class|fn|info|exit|input)\\b"
 				},
 				{
 					"name": "storage.type.builtin-types.az",

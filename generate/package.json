@@ -2,9 +2,9 @@
   "name": "zu",
   "displayName": "Zura Lang",
   "publisher": "TheDevConnor",
-  "description": "A Syntax HighLighter for Zura Lang",
+  "description": "A Syntax HighLighter for Zura Lang! Here is the docs: https://zura-docs.vercel.app/ ,and the github repo: https://github.com/TheDevConnor/Zura-v2",
   "icon": "img/zura.png",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -12,16 +12,25 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "zu",
-      "aliases": ["Zura", "zu"],
-      "extensions": [".zu"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "zu",
-      "scopeName": "source.zu",
-      "path": "./syntaxes/zu.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "zu",
+        "aliases": [
+          "Zura",
+          "zu"
+        ],
+        "extensions": [
+          ".zu"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "zu",
+        "scopeName": "source.zu",
+        "path": "./syntaxes/zu.tmLanguage.json"
+      }
+    ]
   }
 }

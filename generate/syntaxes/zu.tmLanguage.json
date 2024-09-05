@@ -31,8 +31,8 @@
     "comments": {
       "patterns": [
         {
-          "name": "comment.line.double-slash.az",
-          "match": "//.*$"
+          "name": "comment.line.number-sign.az",
+          "match": "#.*"
         }
       ]
     },
@@ -84,7 +84,7 @@
     "ctr-statements": {
       "patterns": [
         {
-          "match": "\\b(if|else|loop|for|match|include)\\b",
+          "match": "\\b(if|else|loop|const|switch|import)\\b",
           "name": "keyword.operator.az"
         }
       ]
@@ -93,15 +93,15 @@
       "patterns": [
         {
           "name": "entity.name.function.member.az",
-          "match": "\\b(true|false|nil|return|break)\\b"
+          "match": "\\b(true|false|nil|return|break|continue)\\b"
         },
         {
           "name": "storage.type.declaration-ident.az",
-          "match": "\\b(class|fn|info|exit|input)\\b"
+          "match": "\\b(struct|enum|union|fn|dis)\\b"
         },
         {
           "name": "storage.type.builtin-types.az",
-          "match": "\\b(sin|cos|tan|asin|acos|atan|pi)\\b",
+          "match": "\\b()\\b", 
           "captures": {
             "0": {
               "name": "support.function.math.az"
@@ -114,7 +114,7 @@
       "patterns": [
         {
           "name": "storage.type.declaration-ident.az",
-          "match": "\\b(have|case|default|class|extends)\\b",
+          "match": "\\b(have|case|default|template|typename)\\b",
           "foreground": "#FF00FF"
         },
         {
@@ -131,8 +131,8 @@
     "builtin-types": {
       "patterns": [
         {
-          "name": "storage.type.builtin-types.az",
-          "match": "\\b(clock)\\b"
+          "name": "storage.type.builtin-types.az", 
+          "match": "\\b(int|float|str|bool|void)\\b"
         }
       ]
     }

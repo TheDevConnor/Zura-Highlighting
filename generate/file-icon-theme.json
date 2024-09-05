@@ -1,0 +1,17 @@
+{
+    "iconDefinitions": {
+      "zuFileIcon": {
+        "iconPath": "img/zura.png"
+      }
+    },
+    "fileExtensions": {
+      "zu": "zuFileIcon"
+    },
+    "fileNames": {
+      ".zu": "zuFileIcon"
+    },
+    "languageIds": {
+      "zura": "zuFileIcon"
+    }
+  }
+  

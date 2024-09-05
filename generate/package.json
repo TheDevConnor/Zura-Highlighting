@@ -4,7 +4,7 @@
   "publisher": "TheDevConnor",
   "description": "A Syntax HighLighter for Zura Lang! Here is the docs: https://zura-docs.vercel.app/ ,and the github repo: https://github.com/TheDevConnor/Zura-v2",
   "icon": "img/zura.png",
-  "version": "0.0.11",
+  "version": "0.0.15",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -30,6 +30,13 @@
         "language": "zu",
         "scopeName": "source.zu",
         "path": "./syntaxes/zu.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "zura-file-icons",
+        "label": "Zura File Icons",
+        "path": "./file-icon-theme.json"
       }
     ]
   }

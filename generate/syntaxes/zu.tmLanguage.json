@@ -1,6 +1,17 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "Zura",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "storage.type.builtin",
+        "settings": {
+          "foreground": "#FF6347" 
+        }
+      }
+    ]
+  },
+
   "patterns": [
     {
       "include": "#comments"
@@ -31,7 +42,7 @@
     "comments": {
       "patterns": [
         {
-          "name": "comment.line.number-sign.az",
+          "name": "comment.line.number-sign",
           "match": "#.*"
         }
       ]
@@ -39,36 +50,36 @@
     "operations": {
       "patterns": [
         {
-          "name": "keyword.operator.az",
+          "name": "keyword.operator",
           "match": "\\b(&&|\\||\\|not|!|init|this|<-|->)\\b"
         },
         {
-          "name": "keyword.operator.assignment.az",
+          "name": "keyword.operator.assignment",
           "match": "(?<!\\w):=",
           "captures": {
             "0": {
-              "name": "punctuation.definition.reassignment.az"
+              "name": "punctuation.definition.assignment"
             }
           }
         },
         {
-          "name": "keyword.operator.assignment.az",
+          "name": "keyword.operator.assignment",
           "match": "=",
           "captures": {
             "0": {
-              "name": "punctuation.definition.assignment.az"
+              "name": "punctuation.definition.assignment"
             }
           }
         }
       ]
     },
     "strings": {
-      "name": "string.quoted.double.az",
+      "name": "string.quoted.double",
       "begin": "\"",
       "end": "\"",
       "patterns": [
         {
-          "name": "constant.character.escape.az",
+          "name": "constant.character.escape",
           "match": "\\\\."
         }
       ]
@@ -76,7 +87,7 @@
     "numbers": {
       "patterns": [
         {
-          "name": "constant.numeric.az",
+          "name": "constant.numeric",
           "match": "\\b(\\d+(\\.\\d+)?)\\b"
         }
       ]
@@ -85,44 +96,34 @@
       "patterns": [
         {
           "match": "\\b(if|else|loop|const|switch|import)\\b",
-          "name": "keyword.operator.az"
+          "name": "keyword.control"
         }
       ]
     },
     "reserved-words": {
       "patterns": [
         {
-          "name": "entity.name.function.member.az",
+          "name": "keyword",
           "match": "\\b(true|false|nil|return|break|continue)\\b"
         },
         {
-          "name": "storage.type.declaration-ident.az",
+          "name": "storage.type",
           "match": "\\b(struct|enum|union|fn|dis)\\b"
-        },
-        {
-          "name": "storage.type.builtin-types.az",
-          "match": "\\b()\\b", 
-          "captures": {
-            "0": {
-              "name": "support.function.math.az"
-            }
-          }
         }
       ]
     },
     "reserved-words2": {
       "patterns": [
         {
-          "name": "storage.type.declaration-ident.az",
-          "match": "\\b(have|case|default|template|typename)\\b",
-          "foreground": "#FF00FF"
+          "name": "storage.type",
+          "match": "\\b(have|case|default|template|typename)\\b"
         },
         {
-          "name": "variable.other.declaration-az",
+          "name": "variable.other.declaration",
           "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*:?=)",
           "captures": {
             "1": {
-              "name": "variable.other.declaration-az.name"
+              "name": "variable.other.declaration"
             }
           }
         }
@@ -131,17 +132,11 @@
     "builtin-types": {
       "patterns": [
         {
-          "name": "storage.type.builtin-types.az", 
+          "name": "storage.type.builtin", 
           "match": "\\b(int|float|str|bool|void)\\b"
         }
       ]
     }
-  },
-  "colors": {
-    "math": "#FF00FF",
-    "keyword.operator.assignment.az": "#FF0000",
-    "storage.type.declaration-ident.az": "#0072C6",
-    "storage.type.builtin-types.az": "#8c1aff"
   },
   "scopeName": "source.zu"
 }
